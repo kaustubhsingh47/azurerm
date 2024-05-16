@@ -65,4 +65,17 @@ resource "azurerm_shared_image_version" "example" {
     regional_replica_count = 5
     storage_account_type   = "Standard_LRS"
   }
+
+  tags                         = local.tags
+  
+   lifecycle {
+    ignore_changes = [
+      tags["CreatedDate"],
+      tags["Environment"],
+      tags["AIT"],
+      tags["CostCenter"],
+      tags["RunID"],
+      ]
+  }
+
 }
