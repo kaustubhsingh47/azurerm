@@ -1,0 +1,22 @@
+# Global Variables 
+
+name                                = "testsamonis"
+resource_group_name                 = "example-resource-group"
+location                            = "eastus"
+account_tier                        = "Standard"
+replication_type                    = "LRS"
+account_kind                        = "StorageV2"
+edge_zone                           = "edge-zone-1"
+shared_access_key_enabled           = true
+is_hns_enabled                      = true
+public_network_access_enabled       = true
+sas_expiration                      = 3600
+custom_domain_name                  = "example.customdomain.com"
+use_subdomain                       = true
+managed_identity_type               = "SystemAssigned"
+enable_routing                      = true
+publish_internet_endpoints          = true
+publish_microsoft_endpoints         = true
+routing_choice                      = "MicrosoftRouting"
+enable_share_properties             = true
+retention_policy_days               = 7
